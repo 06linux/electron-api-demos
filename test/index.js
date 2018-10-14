@@ -77,11 +77,8 @@ describe('demo app', function () {
       return app.client.dismissAboutPage()
         .selectSection('windows')
         .isExisting('button.is-selected[data-section="windows"]').should.eventually.be.true
-        .isVisible('#pdf-section').should.eventually.be.false
-        .selectSection('pdf')
         .isVisible('#windows-section').should.eventually.be.false
         .isExisting('button.is-selected[data-section="windows"]').should.eventually.be.false
-        .isExisting('button.is-selected[data-section="pdf"]').should.eventually.be.true
     })
   })
 
@@ -128,7 +125,6 @@ describe('demo app', function () {
       .auditSectionAccessibility('app-sys-information')
       .auditSectionAccessibility('clipboard')
       .auditSectionAccessibility('protocol')
-      .auditSectionAccessibility('pdf')
       .auditSectionAccessibility('desktop-capturer')
   })
 })

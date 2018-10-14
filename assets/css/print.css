@@ -11,9 +11,6 @@
   }
 
   .nav, button, .demo-box:before,
-  #pdf-path, header p {
-    display: none;
-  }
 
   .demo-box, h2,
   pre, code {
